@@ -1,0 +1,9 @@
+.subtitle {
+  @include font(24px, 36px, 400, $second-family);
+  color: #252525;
+  opacity: 0.6;
+}
+.subtitle--color {
+  color: #9d9d9d;
+  opacity: 1;
+}

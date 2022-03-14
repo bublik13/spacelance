@@ -1,0 +1,22 @@
+.nav {
+  flex-grow: 1;
+}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav__item {
+}
+.nav__link {
+  text-decoration: none;
+  @include font(20px, 30px, 400, $second-family);
+  color: #252525;
+  opacity: 0.7;
+  padding: 10px 17px;
+  &:hover {
+    @include font(20px, 30px, 500, $second-family);
+    color: #1e88e5;
+    opacity: 1;
+  }
+}

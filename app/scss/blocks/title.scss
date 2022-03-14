@@ -1,0 +1,19 @@
+.title {
+  @include font(65px, 98px, 700, $second-family);
+  color: #252525;
+}
+.title--size {
+  @include font(30px, 45px, 500, $second-family);
+}
+.title--blue {
+  @include font(36px, 54px, 600, $second-family);
+  color: #1e88e5;
+}
+.title--big {
+  @include font(56px, 84px, 500, $second-family);
+  color: #252525;
+}
+.title--big-blue {
+  @include font(56px, 84px, 500, $second-family);
+  color: #1E88E5;
+}

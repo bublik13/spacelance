@@ -1,0 +1,35 @@
+.form {
+  position: relative;
+}
+.form__input {
+  padding: 23px 70px 25px 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: none;
+  width: 420px;
+  @include font(20px, 30px, 400, $second-family);
+  color: #9D9D9D;
+
+}
+.form__wrap-submit {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background-color: #1e88e5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.form__submit {
+  background: url(../img/header/magnifier.svg) center center/contain no-repeat;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
