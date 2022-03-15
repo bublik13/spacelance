@@ -1,0 +1,35 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  transition: ease-out 0.2s;
+  color: #ffffff;
+  background-color: #1e88e5;
+  border-radius: 50px;
+  width: 100%;
+  @include font(20px, 38px, 600, $second-family);
+  padding: 9px 11px 6px;
+  text-align: center;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    opacity: 0.3;
+  }
+  &:active,
+  &._active {
+    opacity: 1;
+  }
+}
+.button--radius {
+  border-radius: 10px;
+}
+.button--width-xs {
+  max-width: 225px;
+}
+.button--width{
+    max-width: 250px;
+    @include font(24px, 36px, 600, $second-family);
+    padding: 20px 24px;
+}

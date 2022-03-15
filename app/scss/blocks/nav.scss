@@ -1,0 +1,101 @@
+.nav {
+  flex-grow: 1;
+  @include media($lg) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include media($md) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  @include media($md) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.nav__item {
+  @include media($md) {
+    padding: 10px;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  @include font(20px, 30px, 400, $second-family);
+  color: #252525;
+  opacity: 0.7;
+  padding: 10px 17px;
+  transition: 0.5s;
+  &:hover {
+    @include font(20px, 30px, 500, $second-family);
+    color: #1e88e5;
+    opacity: 1;
+  }
+  @include media($lg) {
+    &:hover {
+      @include font(20px, 30px, 500, $second-family);
+      color: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+// .nav__link {
+//   color: $nav-color-black;
+//   @include font(20px, 20px, 500, $second-family);
+//   display: block;
+//   padding: 20px 10px;
+//   @include media($md) {
+//     padding: 16px 12px 15px 10px;
+//     @include font(18px, 24px, 400, $second-family);
+//   }
+//   @include media($lg) {
+//     padding: 15px 0 10px;
+//     color: $nav-color-white;
+//     @include font(20px, 30px, 400, $second-family);
+//   }
+//   // &:hover {
+//   //   color: $nav-color-hover;
+//   //   @include media($lg) {
+//   //     color: $nav-color-hover-white;
+//   //   }
+//   // }
+//   // &:focus {
+//   //   color: $nav-color-focus;
+//   //   @include media($lg) {
+//   //     color: $nav-color-focus-white;
+//   //   }
+//   }
+// }
+.nav__link--active {
+  position: relative;
+}
+.nav__link--active::after {
+  @include media($lg) {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 49px;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    width: 63px;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+  // @include media($lg) {
+  //   background-color: $nav-line-white;
+  //   width: 70px;
+  //   top: 52px;
+  // }
+}

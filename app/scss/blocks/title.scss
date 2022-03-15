@@ -1,0 +1,37 @@
+.title {
+  @include font(65px, 98px, 700, $second-family);
+  color: #252525;
+  @include media($md-s) {
+    @include font(40px, 58px, 700, $second-family);
+  }
+}
+.title--size {
+  @include font(30px, 45px, 500, $second-family);
+  @include media($md-s) {
+    @include font(24px, 35px, 500, $second-family);
+  }
+}
+.title--blue {
+  @include font(36px, 54px, 600, $second-family);
+  color: #1e88e5;
+  @include media($sm) {
+    @include font(26px, 44px, 600, $second-family);
+  }
+}
+.title--big {
+  @include font(56px, 84px, 500, $second-family);
+  color: #252525;
+  @include media($sm) {
+    @include font(36px, 54px, 600, $second-family);
+  }
+}
+.title--big-blue {
+  @include font(56px, 84px, 500, $second-family);
+  color: #1E88E5;
+  @include media($sm) {
+    @include font(36px, 54px, 600, $second-family);
+  }
+}
+.title--font {
+  @include font(32px, 48px, 500, $second-family);
+}

@@ -1,0 +1,62 @@
+/* Слайдер запущен */
+.slick-slider {
+  position: relative;
+  width: 100%;
+  height: auto;
+} /* Слайдер запущен */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  width: 372px;
+  height: auto;
+}
+.slick-arrow {
+  position: absolute;
+  top: -177px;
+  right: 86px;
+  height: 62px;
+  width: 62px;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: url(../img/slick/arrow.svg) no-repeat center;
+  transition: 0.5s;
+  &:hover {
+    background: url(../img/slick/arrow-white.svg) no-repeat center;
+    background-color: #1e88e5;
+    transform: rotate(180deg);
+  }
+  &:focus {
+    background: url(../img/slick/arrow-white.svg) no-repeat center;
+    background-color: #1e88e5;
+    transform: rotate(180deg);
+  }
+  @include media($lg-m) {
+   top: -80px;
+  }
+}
+.slick-arrow.slick-prev {
+  background: url(../img/slick/arrow.svg) no-repeat center;
+  transform: rotate(180deg);
+  right: 0;
+  border: none;
+  z-index: 2;
+  transition: 0.5s;
+  &:hover {
+    background: url(../img/slick/arrow-white.svg) no-repeat center;
+    background-color: #1e88e5;
+    transform: rotate(0deg);
+  }
+  &:focus {
+    background: url(../img/slick/arrow-white.svg) no-repeat center;
+    background-color: #1e88e5;
+    transform: rotate(0deg);
+  }
+}
