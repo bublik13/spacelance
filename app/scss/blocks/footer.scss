@@ -2,6 +2,10 @@
   background-color: #ffffff;
 }
 .footer__container {
+  min-width: $container-max-width;
+  max-width: $container-min-width;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   padding-top: 132px;
@@ -42,7 +46,7 @@
 }
 .footer__logo {
   @include media($md) {
-   margin: 0 auto;
+    margin: 0 auto;
   }
 }
 .footer__desc {
@@ -67,14 +71,25 @@
 .footer__icon {
   display: block;
   transition: 0.5s;
+  width: 30px;
+  height: 30px;
+  color: #000;
   &:hover {
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
+    color: #1e88e5;
+    opacity: 1;
+  }
+}
+.footer__wrap-list {
+  padding-top: 7px;
+  @include media($md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 .footer__list {
   list-style: none;
-  padding-top: 7px;
   @include media($md) {
     display: flex;
     flex-direction: column;
@@ -105,6 +120,8 @@
 .footer__link-icon {
   display: block;
   margin-right: 13px;
+  width: 24px;
+  height: 24px;
 }
 .footer__end {
   position: absolute;

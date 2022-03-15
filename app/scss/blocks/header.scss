@@ -1,4 +1,8 @@
 .header__container {
+  min-width: $container-max-width;
+  max-width: $container-min-width;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 51px;
   padding-right: 109px;
   padding-left: 108px;
@@ -85,6 +89,9 @@
   background-position-x: 90%;
   @include media($xl) {
     background: url(../img/header/working.png) top center/contain no-repeat;
+  }
+  @include media($md) {
+    background: none;
   }
   @include media($sm) {
     padding-top: 20px;
