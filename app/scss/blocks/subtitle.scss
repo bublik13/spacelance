@@ -2,8 +2,19 @@
   @include font(24px, 36px, 400, $second-family);
   color: #252525;
   opacity: 0.6;
+  @include media($md-s) {
+    @include font(20px, 30px, 400, $second-family);
+  }
 }
 .subtitle--color {
   color: #9d9d9d;
   opacity: 1;
+}
+.subtitle--color-big {
+  @include font(34px, 56px, 400, $second-family);
+  color: #9d9d9d;
+  opacity: 1;
+}
+.subtitle--opacity {
+  opacity: 0.7;
 }

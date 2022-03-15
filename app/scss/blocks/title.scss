@@ -1,6 +1,9 @@
 .title {
   @include font(65px, 98px, 700, $second-family);
   color: #252525;
+  @include media($md-s) {
+    @include font(40px, 58px, 700, $second-family);
+  }
 }
 .title--size {
   @include font(30px, 45px, 500, $second-family);
@@ -16,4 +19,7 @@
 .title--big-blue {
   @include font(56px, 84px, 500, $second-family);
   color: #1E88E5;
+}
+.title--font {
+  @include font(32px, 48px, 500, $second-family);
 }

@@ -1,3 +1,14 @@
-.body{
-    background-color: #F2FAFA;
+.body {
+  background-color: #f2fafa;
+}
+.body__lock {
+  overflow: hidden;
+}
+.body--lock {
+  position: fixed;
+  overflow-y: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
