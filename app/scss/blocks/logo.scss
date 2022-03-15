@@ -4,4 +4,7 @@
 .logo__img--width{
   width: 315px;
   height: 68px;
+  @include media($sm) {
+    width: 280px;
+  }
 }

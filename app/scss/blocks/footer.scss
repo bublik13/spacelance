@@ -10,15 +10,49 @@
   padding-right: 102px;
   position: relative;
   min-height: 539px;
+  @include media($lg-m) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  @include media($lg-s) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include media($md) {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    width: 100%;
+  }
+  @include media($sm) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+.footer__social {
+  @include media($md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .footer__logo {
-  width: 315px;
+  @include media($md) {
+   margin: 0 auto;
+  }
 }
 .footer__desc {
   max-width: 312px;
   @include font(18px, 27px, 400, $second-family);
   color: #252525;
   margin-bottom: 20px;
+  @include media($md) {
+    text-align: center;
+  }
 }
 .footer__icons {
   display: flex;
@@ -41,6 +75,12 @@
 .footer__list {
   list-style: none;
   padding-top: 7px;
+  @include media($md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .footer__title {
   @include font(24px, 36px, 500, $second-family);
@@ -73,4 +113,11 @@
   transform: translate(-50%);
   @include font(18px, 27px, 400, $second-family);
   color: #9d9d9d;
+  text-align: center;
+  @include media($md) {
+    bottom: 5px;
+  }
+  @include media($sm) {
+    @include font(14px, 23px, 400, $second-family);
+  }
 }

@@ -12,6 +12,9 @@
   display: flex;
   width: 372px;
   height: 418px;
+  @include media($sm) {
+    height: 450px;
+  }
 }
 .slick-arrow {
   position: absolute;
@@ -37,6 +40,9 @@
     background: url(../img/slick/arrow-white.svg) no-repeat center;
     background-color: #1e88e5;
     transform: rotate(180deg);
+  }
+  @include media($lg-m) {
+   top: -80px;
   }
 }
 .slick-arrow.slick-prev {

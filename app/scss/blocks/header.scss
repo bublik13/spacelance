@@ -90,14 +90,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  @include media($xs) {
+    padding-top: 15px;
+  }
 }
 .header__title {
   margin-bottom: 17px;
   max-width: 634px;
+  @include media($xs) {
+    margin-bottom: 10px;
+  }
 }
 .header__subtitle {
   margin-bottom: 84px;
   max-width: 588px;
+  @include media($sm) {
+    margin-bottom: 104px;
+  }
+  @include media($xs) {
+    margin-bottom: 40px;
+  }
 }
 .header__wrap-button {
   display: flex;

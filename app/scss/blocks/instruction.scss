@@ -1,5 +1,8 @@
 .instruction__container {
   padding-bottom: 176px;
+  @include media($sm) {
+    padding-bottom: 20px;
+  }
 }
 .instruction__list {
   background-color: #ffffff;
@@ -10,6 +13,19 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 98px;
   list-style: none;
+  @include media($lg) {
+    grid-gap: 30px;
+    padding: 20px;
+  }
+  @include media($lg-m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include media($md) {
+    grid-gap: 20px;
+  }
+  @include media($sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .instruction__item {
   display: flex;
